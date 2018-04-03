@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<!-- saved from url=(0076)https://d2l.pdx.edu/d2l/le/content/531796/viewContent/2098596/View?ou=531796 -->
+<html lang="en-us"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<script type="text/javascript" src="./CS161 Homework#2_files/9efc9e456b"></script><script src="./CS161 Homework#2_files/nr-632.min.js"></script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info = {"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"9efc9e456b","applicationID":"2033868","transactionName":"b1wHYUNYWxEFUkJbDlYWLUFFSX0DClVaVxMXfVd5H3VlTDNUVBwpTE0VG3VcUwMRXUIcKUxNFX1QV1EOAUN3VgBITQBH","queueTime":0,"applicationTime":348,"ttGuid":"2EE05DA31B8BF9C","agent":"js-agent.newrelic.com/nr-632.min.js"}</script><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o?o:n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({QJf3ax:[function(e,n){function t(e){function n(n,t,a){e&&e(n,t,a),a||(a={});for(var u=c(n),f=u.length,s=i(a,o,r),p=0;f>p;p++)u[p].apply(s,t);return s}function a(e,n){f[e]=c(e).concat(n)}function c(e){return f[e]||[]}function u(){return t(n)}var f={};return{on:a,emit:n,create:u,listeners:c,_events:f}}function r(){return{}}var o="nr@context",i=e("gos");n.exports=t()},{gos:"7eSDFh"}],ee:[function(e,n){n.exports=e("QJf3ax")},{}],3:[function(e,n){function t(e){return function(){r(e,[(new Date).getTime()].concat(i(arguments)))}}var r=e("handle"),o=e(1),i=e(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(e,n){window.NREUM[n]=t("api-"+n)}),n.exports=window.NREUM},{1:12,2:13,handle:"D5DuLP"}],"7eSDFh":[function(e,n){function t(e,n,t){if(r.call(e,n))return e[n];var o=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return e[n]=o,o}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],gos:[function(e,n){n.exports=e("7eSDFh")},{}],handle:[function(e,n){n.exports=e("D5DuLP")},{}],D5DuLP:[function(e,n){function t(e,n,t){return r.listeners(e).length?r.emit(e,n,t):(o[e]||(o[e]=[]),void o[e].push(n))}var r=e("ee").create(),o={};n.exports=t,t.ee=r,r.q=o},{ee:"QJf3ax"}],id:[function(e,n){n.exports=e("XL7HBI")},{}],XL7HBI:[function(e,n){function t(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:i(e,o,function(){return r++})}var r=1,o="nr@id",i=e("gos");n.exports=t},{gos:"7eSDFh"}],G9z0Bl:[function(e,n){function t(){var e=d.info=NREUM.info,n=f.getElementsByTagName("script")[0];if(e&&e.licenseKey&&e.applicationID&&n){c(p,function(n,t){n in e||(e[n]=t)});var t="https"===s.split(":")[0]||e.sslForHttp;d.proto=t?"https://":"http://",a("mark",["onload",i()]);var r=f.createElement("script");r.src=d.proto+e.agent,n.parentNode.insertBefore(r,n)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=e("handle"),c=e(1),u=(e(2),window),f=u.document,s=(""+location).split("?")[0],p={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-632.min.js"},d=n.exports={offset:i(),origin:s,features:{}};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),u.addEventListener("load",t,!1)):(f.attachEvent("onreadystatechange",r),u.attachEvent("onload",t)),a("mark",["firstbyte",i()])},{1:12,2:3,handle:"D5DuLP"}],loader:[function(e,n){n.exports=e("G9z0Bl")},{}],12:[function(e,n){function t(e,n){var t=[],o="",i=0;for(o in e)r.call(e,o)&&(t[i]=n(o,e[o]),i+=1);return t}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],13:[function(e,n){function t(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(0>o?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=t},{}]},{},["G9z0Bl"]);</script>
+		<title>CS161 Homework#2 - CS-161-001: INTRO PROGRAM &amp; PROB SOLVING  (Summer 2015)</title>
+		<link rel="stylesheet" type="text/css" href="./CS161 Homework#2_files/valenceui.min.css">
+		<link rel="stylesheet" type="text/css" href="./CS161 Homework#2_files/D2L.LP.Web.Desktop.default.css">
+		<link rel="stylesheet" type="text/css" href="./CS161 Homework#2_files/D2L.LE.ToolIntegration.Content.default.css">
+		<style type="text/css">
+		/*<![CDATA[*/
+			.d2l-font{ font-family:verdana, sans-serif; font-size:11px; }
+		/*]]>*/
+		</style>
+		<link rel="stylesheet" type="text/css" href="./CS161 Homework#2_files/5136">
+		<link rel="stylesheet" type="text/css" href="./CS161 Homework#2_files/D2L.LP.Web.Desktop.Print.default.css" media="print">
+		<style type="text/css">
+		/*<![CDATA[*/
+			.d2l_1_12_847 {background-color:#000000;}
+			.d2l_1_13_828 {table-layout: Inherit;}
+			.d2l_1_14_528 {vertical-align:middle;}
+			.d2l_1_15_532 {background-image:url('/d2l/img/0/sprites/D2L.LP.Main.png?v=10.3.0.2146-105');background-position:-9px -1413px;background-repeat:no-repeat;width:9px;height:18px;}
+			.d2l_1_17_95 {background-image:url('/d2l/img/0/sprites/D2L.LP.Main.png?v=10.3.0.2146-105');background-position:-10px -1431px;background-repeat:no-repeat;width:10px;height:10px;}
+			.d2l_1_18_368 {max-width:375px;}
+			.d2l_1_19_247 {min-width:375px;}
+			.d2l_1_21_656 {background-image:url('/d2l/img/0/sprites/D2L.LP.Main.png?v=10.3.0.2146-105');background-position:0 -310px;background-repeat:no-repeat;width:20px;height:20px;}
+			.d2l_1_22_762 {background-image:url('/d2l/img/0/sprites/D2L.LP.Main.png?v=10.3.0.2146-105');background-position:0 -110px;background-repeat:no-repeat;width:20px;height:20px;}
+			.d2l_1_23_708 {background-image:url('/d2l/img/0/sprites/D2L.LP.Main.png?v=10.3.0.2146-105');background-position:0 -210px;background-repeat:no-repeat;width:20px;height:20px;}
+			.d2l_1_24_212 {background-image:url('/d2l/img/0/sprites/D2L.LP.Main.png?v=10.3.0.2146-105');background-position:0 -190px;background-repeat:no-repeat;width:20px;height:20px;}
+			.d2l_1_25_180 {max-width:350px;}
+			.d2l_1_26_605 {min-width:350px;}
+			.d2l_1_28_445 {padding:0px 10px;}
+			.d2l_1_29_800 {margin:5px;}
+			.d2l_1_30_484 {background-image:url('/d2l/img/0/sprites/D2L.LP.Main.png?v=10.3.0.2146-105');background-position:0 -853px;background-repeat:no-repeat;width:16px;height:16px;}
+			.d2l_1_31_638 {background-image:url('/d2l/img/0/sprites/D2L.LP.Main.png?v=10.3.0.2146-105');background-position:0 -230px;background-repeat:no-repeat;width:20px;height:20px;}
+			.d2l_1_32_755 {background-image:url('/d2l/img/0/sprites/D2L.LP.Main.png?v=10.3.0.2146-105');background-position:0 -270px;background-repeat:no-repeat;width:20px;height:20px;}
+			.d2l_1_33_513 {background-image:url('/d2l/img/0/sprites/D2L.LP.Main.png?v=10.3.0.2146-105');background-position:0 -250px;background-repeat:no-repeat;width:20px;height:20px;}
+			.d2l_1_34_831 {background-image:url('/d2l/img/0/sprites/D2L.LP.Main.png?v=10.3.0.2146-105');background-position:0 -170px;background-repeat:no-repeat;width:20px;height:20px;}
+			.d2l_1_36_996 {background-image:url('/d2l/img/0/sprites/D2L.LP.Main.png?v=10.3.0.2146-105');background-position:0 -130px;background-repeat:no-repeat;width:20px;height:20px;}
+			.d2l_1_37_700 {background-image:url('/d2l/img/0/sprites/D2L.LP.Main.png?v=10.3.0.2146-105');background-position:0 -70px;background-repeat:no-repeat;width:20px;height:20px;}
+			.d2l_1_38_692 {background-image:url('/d2l/img/0/sprites/D2L.LP.Main.png?v=10.3.0.2146-105');background-position:0 -90px;background-repeat:no-repeat;width:20px;height:20px;}
+			.d2l_1_39_303 {background-image:url('/d2l/img/0/sprites/D2L.LP.Main.png?v=10.3.0.2146-105');background-position:0 -150px;background-repeat:no-repeat;width:20px;height:20px;}
+			.d2l_1_41_48 {background-image:url('/d2l/img/0/sprites/D2L.LP.Main.png?v=10.3.0.2146-105');background-position:0 -48px;background-repeat:no-repeat;width:22px;height:22px;}
+			.d2l_1_42_311 {background-image:url('/d2l/img/0/sprites/D2L.LP.Main.png?v=10.3.0.2146-105');background-position:0 -1445px;background-repeat:no-repeat;width:10px;height:10px;}
+			.d2l_1_44_306 {margin:10px;}
+			.d2l_1_45_178 {vertical-align:top;}
+			.d2l_1_46_855 {width:1%;}
+			.d2l_1_51_118 {background-position:left top;}
+			.d2l_1_52_329 {padding:1em;}
+			.d2l_1_53_243 {background-image:url('/d2l/img/0/Auth.SessionExpiry.actAlert.png?v=10.3.0.2146-105');}
+			.d2l_1_54_781 {background-position:right top;}
+			.d2l_1_55_709 {padding-right:75px;}
+			.d2l_1_56_437 {min-height:115px;}
+			.d2l_1_57_666 {background-image:url('/d2l/img/0/Auth.SessionExpiry.actCheck.png?v=10.3.0.2146-105');}
+			.d2l_1_58_939 {padding:3.6em;}
+			.d2l_1_59_742 {vertical-align:baseline;}
+			.d2l_1_60_634 {width:100%;}
+			.d2l_1_62_314 {margin-top:0.5em;margin-bottom:10px;}
+			.d2l_1_63_636 {table-layout: Fixed;}
+			.d2l_1_64_744 {width:34px;}
+			.d2l_1_65_738 {margin-right:10px;}
+			.d2l_1_66_909 {background-image:url('/d2l/img/0/sprites/D2L.LP.FileTypes.png?v=10.3.0.2146-105');background-position:0 -966px;background-repeat:no-repeat;width:24px;height:24px;}
+			.d2l_1_69_908 {background-image:url('/d2l/img/0/Content.Main.actDownload.gif?v=10.3.0.2146-105');}
+			.d2l_1_71_619 {background-image:url('/d2l/img/0/sprites/D2L.LP.Main.png?v=10.3.0.2146-105');background-position:-10px -1441px;background-repeat:no-repeat;width:10px;height:7px;}
+			.d2l_1_72_402 {margin:4px 0px 0px 5px;}
+			.d2l_1_75_11 {background-image:url('/d2l/img/0/Content.Main.actBookmarkTopic24.png?v=10.3.0.2146-105');background-position:0 0;background-repeat:no-repeat;width:36px;height:28px;}
+			.d2l_1_76_344:hover,.d2l_1_76_344:focus,.d2l_1_76_344:active {background-image:url('/d2l/img/0/Content.Main.actBookmarkTopicHover24.png?v=10.3.0.2146-105');background-position:0 0;background-repeat:no-repeat;width:36px;height:28px;}
+			.d2l_1_77_754 {background-image:url('/d2l/img/0/Content.Main.actRemoveBookmark24.png?v=10.3.0.2146-105');background-position:0 0;background-repeat:no-repeat;width:36px;height:28px;}
+			.d2l_1_78_402:hover,.d2l_1_78_402:focus,.d2l_1_78_402:active {background-image:url('/d2l/img/0/Content.Main.actRemoveBookmarkHover24.png?v=10.3.0.2146-105');background-position:0 0;background-repeat:no-repeat;width:36px;height:28px;}
+			.d2l_1_80_324 {background-image:url('/d2l/img/0/Content.Main.actFullScreen.png?v=10.3.0.2146-105');background-position:0 0;background-repeat:no-repeat;width:36px;height:28px;}
+			.d2l_1_81_30:hover,.d2l_1_81_30:focus,.d2l_1_81_30:active {background-image:url('/d2l/img/0/Content.Main.actFullScreenHover.png?v=10.3.0.2146-105');background-position:0 0;background-repeat:no-repeat;width:36px;height:28px;}
+			.d2l_1_82_636 {margin-left:10px;}
+			.d2l_1_83_14 {background-image:url('/d2l/img/0/Framework.Iterator.actPrevMvc.png?v=10.3.0.2146-105');background-position:0 0;background-repeat:no-repeat;width:16px;height:16px;}
+			.d2l_1_84_37 {background-image:url('/d2l/img/0/Framework.Iterator.actNextMvc.png?v=10.3.0.2146-105');background-position:0 0;background-repeat:no-repeat;width:16px;height:16px;}
+			.d2l_1_85_365 {margin-bottom:10px;}
+			.d2l_1_88_731 {padding:20px 0px 0px 0px;}
+			.d2l_1_89_121 {background-image:url('/d2l/img/0/Content.Main.actDownload.gif?v=10.3.0.2146-105');background-position:0 0;background-repeat:no-repeat;width:16px;height:16px;}
+			.d2l_1_90_182 {background-image:url('/d2l/img/0/sprites/D2L.LP.Main.png?v=10.3.0.2146-105');background-position:0 -629px;background-repeat:no-repeat;width:16px;height:16px;}
+			.d2l_1_91_330 {padding:20px 0px 10px 0px;}
+			.d2l_1_94_667 {background-color:#F8F8F8;}
+			.d2l_1_95_28 {border:1px solid #D4D4D4;}
+			.d2l_1_97_674 {background-image:url('/d2l/img/0/sprites/D2L.LP.Main.png?v=10.3.0.2146-105');background-position:0 -741px;background-repeat:no-repeat;width:16px;height:16px;}
+			.d2l_1_99_567 {background-image:url('/d2l/img/0/sprites/D2L.LP.Main.png?v=10.3.0.2146-105');background-position:0 -805px;background-repeat:no-repeat;width:16px;height:16px;}
+			.d2l_1_100_267 {background-color:#FFFFFF;}
+			.d2l_1_101_521 {border-right:1px solid #D4D4D4;border-bottom:1px solid #D4D4D4;border-left:1px solid #D4D4D4;}
+			.d2l_1_102_577 {padding:10px 20px;}
+			.d2l_1_103_523 {padding:0px 0px 10px 0px;}
+			.d2l_1_104_896 {background-image:url('/d2l/img/0/Content.ContentStructureBrowser.infNotVisited.png?v=10.3.0.2146-105');}
+			.d2l_1_105_142 {padding-left:23px;}
+			.d2l_1_106_714 {min-height:18px;}
+		/*]]>*/
+		</style>
+	<script type="text/x-mathjax-config;executed=true">MathJax.Hub.Config({ delayStartupUntil: "onload",showProcessingMessages: false, messageStyle: "none", showMathMenu: true, showMathMenuMSIE: true, menuSettings: { context: "MathJax", zoom: "None" },NativeMML: { showMathMenuMSIE: false, scale: 140 }, "HTML-CSS": { linebreaks: { automatic: true, width: "container"}, imageFont: null, scale: 130 } });</script><script type="text/javascript" src="./CS161 Homework#2_files/MathJax.js"></script><style type="text/css"></style><style type="text/css">.MathJax_Hover_Frame {border-radius: .25em; -webkit-border-radius: .25em; -moz-border-radius: .25em; -khtml-border-radius: .25em; box-shadow: 0px 0px 15px #83A; -webkit-box-shadow: 0px 0px 15px #83A; -moz-box-shadow: 0px 0px 15px #83A; -khtml-box-shadow: 0px 0px 15px #83A; border: 1px solid #A6D ! important; display: inline-block; position: absolute}
+.MathJax_Hover_Arrow {position: absolute; width: 15px; height: 11px; cursor: pointer}
+</style><style type="text/css">#MathJax_About {position: fixed; left: 50%; width: auto; text-align: center; border: 3px outset; padding: 1em 2em; background-color: #DDDDDD; color: black; cursor: default; font-family: message-box; font-size: 120%; font-style: normal; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 15px; -webkit-border-radius: 15px; -moz-border-radius: 15px; -khtml-border-radius: 15px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+.MathJax_Menu {position: absolute; background-color: white; color: black; width: auto; padding: 5px 0px; border: 1px solid #CCCCCC; margin: 0; cursor: default; font: menu; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px; -khtml-border-radius: 5px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+.MathJax_MenuItem {padding: 1px 2em; background: transparent}
+.MathJax_MenuTitle {background-color: #CCCCCC; margin: -5px 0 0 0; text-align: center; font-style: italic; font-size: 80%; color: #444444; padding: 2px 0; overflow: hidden}
+.MathJax_MenuArrow {position: absolute; right: .5em; color: #666666}
+.MathJax_MenuActive .MathJax_MenuArrow {color: white}
+.MathJax_MenuCheck {position: absolute; left: .7em}
+.MathJax_MenuRadioCheck {position: absolute; left: .7em}
+.MathJax_MenuLabel {padding: 1px 2em 3px 1.33em; font-style: italic}
+.MathJax_MenuRule {border-top: 1px solid #DDDDDD; margin: 4px 3px}
+.MathJax_MenuDisabled {color: GrayText}
+.MathJax_MenuActive {background-color: #606872; color: white}
+.MathJax_Menu_Close {position: absolute; width: 31px; height: 31px; top: -15px; left: -15px}
+</style><style type="text/css">#MathJax_Zoom {position: absolute; background-color: #F0F0F0; overflow: auto; display: block; z-index: 301; padding: .5em; border: 1px solid black; margin: 0; font-weight: normal; font-style: normal; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; box-shadow: 5px 5px 15px #AAAAAA; -webkit-box-shadow: 5px 5px 15px #AAAAAA; -moz-box-shadow: 5px 5px 15px #AAAAAA; -khtml-box-shadow: 5px 5px 15px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_ZoomOverlay {position: absolute; left: 0; top: 0; z-index: 300; display: inline-block; width: 100%; height: 100%; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+#MathJax_ZoomEventTrap {position: absolute; left: 0; top: 0; z-index: 302; display: inline-block; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+</style><style type="text/css">.MathJax_Preview {color: #888}
+#MathJax_Message {position: fixed; left: 1em; bottom: 1.5em; background-color: #E6E6E6; border: 1px solid #959595; margin: 0px; padding: 2px 8px; z-index: 102; color: black; font-size: 80%; width: auto; white-space: nowrap}
+#MathJax_MSIE_Frame {position: absolute; top: 0; left: 0; width: 0px; z-index: 101; border: 0px; margin: 0px; padding: 0px}
+.MathJax_Error {color: #CC0000; font-style: italic}
+</style></head>
+	<body class="d2l-body d2l-font"><div id="MathJax_Message" style="display: none;"></div>
+		<div class="d2l-background-global"><div></div>
+		</div>
+		<div class="d2l-background-left"><div><div></div>
+			</div>
+		</div>
+		<div class="d2l-background-right"><div><div></div>
+			</div>
+		</div>
+		<a href="https://d2l.pdx.edu/d2l/le/content/531796/viewContent/2098596/View?ou=531796#d2l_1_11_666" class="d2l-skipnav" id="d2l_skipnav">skip to main content</a>
+		<div class="d2l-minibar-placeholder d2l-minibar-placeholder-fixed" id="d2l_minibar_placeholder" style="height: 34px;">
+			<div class="d2l-minibar d2l-min-width d2l-minibar-light d2l_1_12_847" id="d2l_minibar">
+				<div class="d2l-max-width">
+					<div class="d2l-minibar-padding">
+						<div class="d2l-box-layout d2l_1_13_828">
+							<div class="d2l-box d2l-box-h d2l_1_14_528">
+								<a class="d2l-minibar-home vui-link d2l-link" href="https://d2l.pdx.edu/d2l/lp/ouHome/defaultHome.d2l"><img class="" src="./CS161 Homework#2_files/1523748" alt=""><span class="d2l-minibar-home-text">My Home</span></a><span class="d2l-minibar-breadcrumb"><span class="d2l_1_15_532"></span><span class="d2l-menuflyout-spacer">&nbsp;</span></span><div class="d2l-menuflyout-link d2l-menuflyout-closed d2l-menuflyout-light d2l-left" id="d2l_1_16_321">
+									<div class="d2l-menuflyout-link-hover">
+										<a class="d2l-menuflyout-link-link" title="CS-161-001: INTRO PROGRAM &amp; PROB SOLVING  (Summer 2015)" href="https://d2l.pdx.edu/d2l/home/531796">CS-161-001: INTRO PROGRAM &amp; PROB SOLVING  (Summer 2015)</a><a class="d2l-menuflyout-opener d2l-clickable" title="Select a course..." onclick="return false;" tabindex="0" role="button" aria-controls="d2l_1_20_60" aria-labelledby="d2l_c_9_933"><div class="d2l-textblock d2l-offscreen" id="d2l_c_9_933">Select a course...</div>
+										<span class="d2l-menuflyout-link-arrow d2l_1_17_95"></span><span class="d2l-menuflyout-spacer">&nbsp;</span></a><div class="d2l-clear"></div>
+									</div>
+									<div class="d2l-menuflyout-contents d2l_1_18_368 d2l_1_19_247" id="d2l_1_20_60" aria-hidden="true" aria-expanded="false" tabindex="0" aria-live="assertive" aria-labelledby="d2l_c_9_933" style="max-height: 618px;">
+										<div class="d2l-menuflyout-group-container">
+											<div id="courseSelectorId" class="d2l-placeholder d2l-placeholder-live" aria-live="assertive">
+												<div class="d2l-loading"><div class="d2l-textblock d2l-offscreen">Loading...</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="d2l-box d2l-box-h d2l-minibar-right d2l_1_14_528">
+								<div class="d2l-minibar-activity">
+									<div class="d2l-menuflyout d2l-menuflyout-closed d2l-menuflyout-light d2l-left" id="d2l_1_8_437">
+										<a class="d2l-menuflyout-opener d2l-clickable" title="Message alerts - You have new alerts" onclick="return false;" tabindex="0" role="button" aria-controls="d2l_1_27_70" aria-labelledby="d2l_c_1_448">
+											<span class="d2l-menuflyout-text d2l-offscreen" id="d2l_c_1_448">Message alerts - You have new alerts</span><div class="d2l-minibar-activity-buckethandle alert_bucket_Messages">
+												<img src="./CS161 Homework#2_files/pixel.gif" alt="" class="Alert d2l-hidden d2l_1_21_656"><img src="./CS161 Homework#2_files/pixel.gif" alt="" class="NewAlert d2l_1_22_762"><img src="./CS161 Homework#2_files/pixel.gif" alt="" class="OpenAlert d2l-hidden d2l_1_23_708"><img src="./CS161 Homework#2_files/pixel.gif" alt="" class="NewOpenAlert d2l-hidden d2l_1_24_212"><span class="d2l-menuflyout-spacer">&nbsp;</span></div>
+											<div class="d2l-clear"></div>
+										</a>
+										<div class="d2l-menuflyout-contents d2l-menuflyout-contents-left d2l_1_25_180 d2l_1_26_605" id="d2l_1_27_70" aria-hidden="true" aria-expanded="false" tabindex="0" aria-live="assertive" aria-labelledby="d2l_c_1_448" style="max-height: 618px;">
+											<div class="d2l-menuflyout-group-container">
+												<div class="d2l_1_28_445">
+													<div>
+														<div>
+															<a class="d2l-text-imagelink vui-outline d2l-right d2l_1_29_800" href="https://d2l.pdx.edu/d2l/lms/email/frame.d2l?ou=531796">
+																<img class="d2l-text-imagelink-img d2l_1_30_484" src="./CS161 Homework#2_files/pixel.gif" alt=""><span class="d2l-text-imagelink-text">Go to D2L Mail</span>
+															</a>
+															<div class="d2l-clear"></div>
+														</div>
+														<div id="AB_DL_PH_Messages" class="d2l-placeholder d2l-placeholder-live" aria-live="assertive">
+															<div class="d2l-loading"><div class="d2l-textblock d2l-offscreen">Loading...</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="d2l-minibar-separator"></div><div class="d2l-menuflyout d2l-menuflyout-closed d2l-menuflyout-light d2l-left" id="d2l_1_9_229">
+										<a class="d2l-menuflyout-opener d2l-clickable" title="Update alerts" onclick="return false;" tabindex="0" role="button" aria-controls="d2l_1_35_619" aria-labelledby="d2l_c_2_722">
+											<span class="d2l-menuflyout-text d2l-offscreen" id="d2l_c_2_722">Update alerts</span><div class="d2l-minibar-activity-buckethandle alert_bucket_Grades">
+												<img src="./CS161 Homework#2_files/pixel.gif" alt="" class="Alert d2l_1_31_638"><img src="./CS161 Homework#2_files/pixel.gif" alt="" class="NewAlert d2l-hidden d2l_1_32_755"><img src="./CS161 Homework#2_files/pixel.gif" alt="" class="OpenAlert d2l-hidden d2l_1_33_513"><img src="./CS161 Homework#2_files/pixel.gif" alt="" class="NewOpenAlert d2l-hidden d2l_1_34_831"><span class="d2l-menuflyout-spacer">&nbsp;</span></div>
+											<div class="d2l-clear"></div>
+										</a>
+										<div class="d2l-menuflyout-contents d2l-menuflyout-contents-left d2l_1_25_180 d2l_1_26_605" id="d2l_1_35_619" aria-hidden="true" aria-expanded="false" tabindex="0" aria-live="assertive" aria-labelledby="d2l_c_2_722" style="max-height: 618px;">
+											<div class="d2l-menuflyout-group-container">
+												<div class="d2l_1_28_445">
+													<div>
+														<div id="AB_DL_PH_Grades" class="d2l-placeholder d2l-placeholder-live" aria-live="assertive">
+															<div class="d2l-loading"><div class="d2l-textblock d2l-offscreen">Loading...</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="d2l-minibar-separator"></div><div class="d2l-menuflyout d2l-menuflyout-closed d2l-menuflyout-light d2l-left" id="d2l_1_10_377">
+										<a class="d2l-menuflyout-opener d2l-clickable" title="Subscription alerts" onclick="return false;" tabindex="0" role="button" aria-controls="d2l_1_40_199" aria-labelledby="d2l_c_3_213">
+											<span class="d2l-menuflyout-text d2l-offscreen" id="d2l_c_3_213">Subscription alerts</span><div class="d2l-minibar-activity-buckethandle alert_bucket_Alerts">
+												<img src="./CS161 Homework#2_files/pixel.gif" alt="" class="Alert d2l_1_36_996"><img src="./CS161 Homework#2_files/pixel.gif" alt="" class="NewAlert d2l-hidden d2l_1_37_700"><img src="./CS161 Homework#2_files/pixel.gif" alt="" class="OpenAlert d2l-hidden d2l_1_38_692"><img src="./CS161 Homework#2_files/pixel.gif" alt="" class="NewOpenAlert d2l-hidden d2l_1_39_303"><span class="d2l-menuflyout-spacer">&nbsp;</span></div>
+											<div class="d2l-clear"></div>
+										</a>
+										<div class="d2l-menuflyout-contents d2l-menuflyout-contents-left d2l_1_25_180 d2l_1_26_605" id="d2l_1_40_199" aria-hidden="true" aria-expanded="false" tabindex="0" aria-live="assertive" aria-labelledby="d2l_c_3_213" style="max-height: 618px;">
+											<div class="d2l-menuflyout-group-container">
+												<div class="d2l_1_28_445">
+													<div>
+														<div id="AB_DL_PH_Alerts" class="d2l-placeholder d2l-placeholder-live" aria-live="assertive">
+															<div class="d2l-loading"><div class="d2l-textblock d2l-offscreen">Loading...</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+								</div><div class="d2l-menuflyout d2l-menuflyout-closed d2l-menuflyout-light">
+									<a class="d2l-menuflyout-opener d2l-clickable" onclick="return false;" tabindex="0" role="button" aria-controls="d2l_1_43_7" aria-labelledby="d2l_c_4_647">
+										<img class="d2l-image d2l-menuflyout-icon d2l_1_41_48" src="./CS161 Homework#2_files/pixel.gif" alt="">
+										<span class="d2l-menuflyout-text" id="d2l_c_4_647">Anisha Aggarwal</span><span class="d2l-menuflyout-arrow d2l-menuflyout-arrow-open d2l_1_42_311"></span><span class="d2l-menuflyout-arrow d2l_1_17_95 d2l-menuflyout-arrow-closed"></span>
+										<div class="d2l-clear"></div>
+									</a>
+									<div class="d2l-menuflyout-contents d2l-menuflyout-contents-left" id="d2l_1_43_7" aria-hidden="true" aria-expanded="false" tabindex="0" aria-live="assertive" aria-labelledby="d2l_c_4_647" style="max-height: 618px;">
+										<div class="d2l-menuflyout-group-container">
+											<div>
+												<ul class="d2l-list">
+													<li>
+														<ul style="list-style:none;margin:10px;padding:0;">
+															<li>
+																<span style="white-space:nowrap;"><a class="vui-link vui-outline d2l-link" href="https://d2l.pdx.edu/d2l/lp/profile/profile_edit.d2l?ou=531796" onclick="D2L.O(&quot;__g1&quot;,0)();">Profile</a>
+																</span></li>
+															<li>
+																<span style="white-space:nowrap;"><a class="vui-link vui-outline d2l-link" href="https://d2l.pdx.edu/d2l/Notifications/Settings?ou=531796" onclick="D2L.O(&quot;__g1&quot;,1)();">Notifications</a>
+																</span></li>
+															<li>
+																<span style="white-space:nowrap;"><a class="vui-link vui-outline d2l-link" href="https://d2l.pdx.edu/d2l/lp/preferences/preferences_main/preferences_main.d2l?ou=531796" onclick="D2L.O(&quot;__g1&quot;,2)();">Account Settings</a>
+																</span></li>
+														</ul>
+														<hr class="d2l-minibar-menu-separator"></li>
+													<li>
+														<ul style="list-style:none;margin:10px;padding:0;">
+															<li>
+																<span style="white-space:nowrap;"><a class="vui-link vui-outline d2l-link" href="https://d2l.pdx.edu/d2l/le/userprogress/148906/531796/Summary?searchString=&sortDirection=0&sortField=LastName">Progress</a>
+																</span></li>
+														</ul>
+														<hr class="d2l-minibar-menu-separator"></li>
+													<li>
+														<span style="white-space:nowrap;"><a class="vui-link vui-outline d2l-link d2l_1_44_306" href="javascript:void(0);" onclick="D2L.O(&quot;__g1&quot;,3)();return false;">Log Out</a>
+														</span></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="d2l-clear"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="d2l_navbar" class="d2l-navbar d2l-font-inverse d2l-min-width" role="navigation">
+			<h2 class="d2l-offscreen">Navigation</h2>
+			<div class="d2l-navbar-container d_nb_cFull">
+				<div class="d2l-max-width">
+					<div class="d2l-navbar-container d_nb_cGlobal">
+						<div class="d2l-box-layout d2l_1_13_828">
+							<div class="d2l-box d2l-box-v d2l_1_45_178">
+								<div class="d2l-box-layout d2l_1_13_828">
+									<div class="d2l-box d2l-box-h d2l_1_46_855 d2l_1_45_178">
+										<a class="d2l-navbar-logo-link vui-outline d2l-left" href="https://d2l.pdx.edu/d2l/lp/ouHome/defaultHome.d2l" title="My Home"><img class="d2l-navbar-image d2l-navbar-image-left" src="./CS161 Homework#2_files/view" alt="My Home"></a>
+										<div class="d2l-clear"></div>
+									</div>
+									<div class="d2l-box d2l-box-h d2l_1_45_178">
+										<div class="d2l-navbar-container d_nb_cMiddle">
+											<div class="d2l-navbar-area d_nb_pMainLinks">
+												<div class="d_nb_pd">
+													<div class="d_nb_i">
+														<ul class="d2l-navbar-area-list">
+															<li class="d2l-navbar-area-list-item-last">
+																<div class="d2l-navbar-item">
+																	<a class="d2l-navbar-link" href="https://d2l.pdx.edu/d2l/lp/navbars/531796/customlinks/external/5243"><span>CS-161-001: INTRO PROGRAM &amp; PROB SOLVING  (Summer 2015)</span></a></div>
+																<span class="d2l-navbar-sep"></span>
+															</li>
+														</ul>
+													</div>
+													<div class="d2l-clear"></div>
+												</div>
+											</div>
+											<div class="d2l-clear"></div>
+										</div>
+									</div>
+									<div class="d2l-box d2l-box-h d2l_1_46_855 d2l_1_45_178">
+									</div>
+								</div>
+							</div>
+							<div class="d2l-box d2l-box-v d2l_1_45_178">
+								<div class="d2l-navbar-container d_nb_cBottom">
+									<div class="d2l-navbar-area d_nb_pBottomLinks">
+										<div class="d_nb_pd">
+											<div class="d_nb_i">
+												<ul class="d2l-navbar-area-list">
+													<li>
+														<div class="d2l-navbar-item">
+															<a class="d2l-navbar-link" href="https://d2l.pdx.edu/d2l/home/531796"><span>Course Home</span></a></div>
+														<span class="d2l-navbar-sep"></span>
+													</li>
+													<li>
+														<div class="d2l-navbar-item">
+															<a class="d2l-navbar-link" href="https://d2l.pdx.edu/d2l/le/content/531796/Home"><span>Course Content</span></a></div>
+														<span class="d2l-navbar-sep"></span>
+													</li>
+													<li>
+														<div class="d2l-navbar-item d2l-navbar-group">
+															<div class="d2l-menuflyout d2l-menuflyout-closed d2l-menuflyout-dark">
+																<a class="d2l-menuflyout-opener d2l-clickable" onclick="return false;" tabindex="0" role="button" aria-controls="d2l_1_47_574" aria-labelledby="d2l_c_5_805">
+																	<span class="d2l-menuflyout-text" id="d2l_c_5_805">Activities</span><span class="d2l-menuflyout-arrow d2l_1_42_311"></span>
+																	<div class="d2l-clear"></div>
+																</a>
+																<div class="d2l-menuflyout-contents" id="d2l_1_47_574" aria-hidden="true" aria-expanded="false" tabindex="0" aria-live="assertive" aria-labelledby="d2l_c_5_805">
+																	<div class="d2l-menuflyout-group-container">
+																		<ul class="d2l-navbar-group-inner">
+																			<li>
+																				<a class="vui-link d2l-link vui-outline" href="https://d2l.pdx.edu/d2l/le/531796/discussions/List"><span>Discussions</span></a></li>
+																			<li>
+																				<a class="vui-link d2l-link vui-outline" href="https://d2l.pdx.edu/d2l/lms/dropbox/dropbox.d2l?ou=531796"><span>Dropbox
+</span></a></li>
+																			<li>
+																				<a class="vui-link d2l-link vui-outline" href="https://d2l.pdx.edu/d2l/lms/quizzing/quizzing.d2l?ou=531796"><span>Quizzes</span></a></li>
+																			<li>
+																				<a class="vui-link d2l-link vui-outline" onclick="D2L.O(&quot;__g1&quot;,4)()" tabindex="0"><span>My Media</span></a></li>
+																		</ul>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<span class="d2l-navbar-sep"></span>
+													</li>
+													<li>
+														<div class="d2l-navbar-item d2l-navbar-group">
+															<div class="d2l-menuflyout d2l-menuflyout-closed d2l-menuflyout-dark">
+																<a class="d2l-menuflyout-opener d2l-clickable" onclick="return false;" tabindex="0" role="button" aria-controls="d2l_1_48_433" aria-labelledby="d2l_c_6_951">
+																	<span class="d2l-menuflyout-text" id="d2l_c_6_951">People</span><span class="d2l-menuflyout-arrow d2l_1_42_311"></span>
+																	<div class="d2l-clear"></div>
+																</a>
+																<div class="d2l-menuflyout-contents" id="d2l_1_48_433" aria-hidden="true" aria-expanded="false" tabindex="0" aria-live="assertive" aria-labelledby="d2l_c_6_951">
+																	<div class="d2l-menuflyout-group-container">
+																		<ul class="d2l-navbar-group-inner">
+																			<li>
+																				<a class="vui-link d2l-link vui-outline" href="https://d2l.pdx.edu/d2l/lms/classlist/classlist.d2l?ou=531796"><span>Classlist</span></a></li>
+																			<li>
+																				<a class="vui-link d2l-link vui-outline" href="https://d2l.pdx.edu/d2l/lms/group/group_list.d2l?ou=531796"><span>Groups</span></a></li>
+																			<li>
+																				<a class="vui-link d2l-link vui-outline" href="https://d2l.pdx.edu/d2l/lms/attendance/index.d2l?ou=531796"><span>Attendance</span></a></li>
+																		</ul>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<span class="d2l-navbar-sep"></span>
+													</li>
+													<li>
+														<div class="d2l-navbar-item d2l-navbar-group">
+															<div class="d2l-menuflyout d2l-menuflyout-closed d2l-menuflyout-dark">
+																<a class="d2l-menuflyout-opener d2l-clickable" onclick="return false;" tabindex="0" role="button" aria-controls="d2l_1_49_431" aria-labelledby="d2l_c_7_56">
+																	<span class="d2l-menuflyout-text" id="d2l_c_7_56">Grades</span><span class="d2l-menuflyout-arrow d2l_1_42_311"></span>
+																	<div class="d2l-clear"></div>
+																</a>
+																<div class="d2l-menuflyout-contents" id="d2l_1_49_431" aria-hidden="true" aria-expanded="false" tabindex="0" aria-live="assertive" aria-labelledby="d2l_c_7_56">
+																	<div class="d2l-menuflyout-group-container">
+																		<ul class="d2l-navbar-group-inner">
+																			<li>
+																				<a class="vui-link d2l-link vui-outline" href="https://d2l.pdx.edu/d2l/lms/grades/index.d2l?ou=531796"><span>Grades</span></a></li>
+																			<li>
+																				<a class="vui-link d2l-link vui-outline" href="https://d2l.pdx.edu/d2l/le/userprogress/148906/531796/Summary?searchString=&sortDirection=0&sortField=LastName"><span>User Progress</span></a></li>
+																			<li>
+																				<a class="vui-link d2l-link vui-outline" href="https://d2l.pdx.edu/d2l/lp/rubrics/list.d2l?ou=531796"><span>Rubrics</span></a></li>
+																		</ul>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<span class="d2l-navbar-sep"></span>
+													</li>
+													<li class="d2l-navbar-area-list-item-last">
+														<div class="d2l-navbar-item d2l-navbar-group">
+															<div class="d2l-menuflyout d2l-menuflyout-closed d2l-menuflyout-dark">
+																<a class="d2l-menuflyout-opener d2l-clickable" onclick="return false;" tabindex="0" role="button" aria-controls="d2l_1_50_762" aria-labelledby="d2l_c_8_413">
+																	<span class="d2l-menuflyout-text" id="d2l_c_8_413">Help</span><span class="d2l-menuflyout-arrow d2l_1_42_311"></span>
+																	<div class="d2l-clear"></div>
+																</a>
+																<div class="d2l-menuflyout-contents" id="d2l_1_50_762" aria-hidden="true" aria-expanded="false" tabindex="0" aria-live="assertive" aria-labelledby="d2l_c_8_413">
+																	<div class="d2l-menuflyout-group-container">
+																		<ul class="d2l-navbar-group-inner">
+																			<li>
+																				<a class="vui-link d2l-link vui-outline" onclick="D2L.O(&quot;__g1&quot;,5)()" tabindex="0"><span>Faculty Help</span></a></li>
+																			<li>
+																				<a class="vui-link d2l-link vui-outline" onclick="D2L.O(&quot;__g1&quot;,6)()" tabindex="0"><span>Student Help</span></a></li>
+																		</ul>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<span class="d2l-navbar-sep"></span>
+													</li>
+												</ul>
+											</div>
+											<div class="d2l-clear"></div>
+										</div>
+									</div>
+									<div class="d2l-clear"></div>
+								</div>
+							</div>
+						</div>
+						<div class="d2l-clear"></div>
+					</div>
+				</div>
+				<div class="d2l-clear"></div>
+			</div>
+		</div>
+		<script type="text/javascript">
+			
+(function(){
+var hpn=function(){
+if(window == window.parent) {return false;}
+var win = window.parent;
+try {while(true) {
+if(win.document === undefined) {return false;}
+var n= win.document.getElementById('d2l_navbar');
+var m = win.document.getElementById('d2l_minibar');
+if(n !== null || m !== null) {return true;}
+if(win == win.parent) {return false;}
+win = win.parent;
+}} catch(e) {}
+return false;};
+if(!hpn()) {return;}
+var rm=function(n) {if(n&&n.parentNode){n.parentNode.removeChild(n);}};
+var d=document;
+rm(d.getElementById('d2l_navbar'));
+rm(d.getElementById('d2l_minibar'));
+rm(d.getElementById('d2l_minibar_placeholder'));
+rm(d.getElementById('d2l_skipnav'));
+})();
+</script>
+		<span class="d2l-fragment"><a name="d2l_1_11_666" style="top: -44px;"></a></span>
+		<div class="d2l-page-message-container"><div class="d2l-page-message" id="d2l_sessionExpiryWarning"><div style="display:none;" id="d2l_sessionExpiryAlert" role="alert"><div class="d2l-container-icon d2l_1_51_118 d2l_1_52_329">
+			<div class="d2l-container-icon-inner d2l_1_53_243 d2l_1_54_781 d2l_1_55_709 d2l_1_56_437">
+				<h2 class="d2l-heading vui-heading-2">Are You Still There?</h2>
+				<div class="d2l-textblock">Your session expires after 180 minutes of inactivity, which protects your information in case you've left your device without logging out.<br>
+<br>
+<strong>Hit a key or click anywhere to stay logged in.</strong></div>
+			</div>
+		</div>
+		</div><div style="display:none;" id="d2l_sessionExpiryCheck" role="alert"><div class="d2l-container-icon d2l_1_51_118 d2l_1_52_329">
+			<div class="d2l-container-icon-inner d2l_1_57_666 d2l_1_54_781 d2l_1_55_709 d2l_1_56_437">
+				<div class="d2l_1_58_939">
+					<h2 class="d2l-heading vui-heading-2">Oh, There You Are!</h2>
+				</div>
+			</div>
+		</div>
+		</div></div>
+		</div>
+		<div class="d2l-page-bg">
+			<div>
+			</div>
+		</div>
+		<div class="d2l-page-main d2l-min-width d2l-max-width" role="main">
+			<div class="d2l-page-collapsepane-container" style="min-height: 628px; top: 226px;"><div class="d2l-page-collapsepane-shadow" title="Expand side panel"><div></div></div><div class="d2l-page-collapsepane" data-openfirst="D2L.O(&quot;__g1&quot;,7)();"><span tabindex="-1" class="d2l-offscreen"></span><div class="d2l-page-collapsepane-handle"><h2 class="d2l-heading vui-offscreen">Side Panel</h2>
+			<a class="d2l-page-collapsepane-handle-link" tabindex="0" title="Expand side panel" role="button"><span class="d2l-page-collapsepane-handle-expand d2l-offscreen">Expand side panel</span><span class="d2l-page-collapsepane-handle-collapse d2l-offscreen">Collapse side panel</span></a></div><div class="d2l-page-collapsepane-content"><div class="d2l-page-collapsepane-content-inner d2l-scrollbar" style="max-height: 499px;"><div class="d2l-page-collapsepane-content-padding"><div id="ContentNavigator" class="d2l-placeholder d2l-placeholder-live" aria-live="assertive">
+				<div class="d2l-loading"><div class="d2l-textblock d2l-offscreen">Loading...</div>
+				</div>
+			</div>
+			</div></div></div><div class="d2l-page-collapsepane-end"></div><span tabindex="-1" class="d2l-offscreen"></span></div></div><div class="d2l-page-main-padding">
+				<div class="d2l-page-header">
+					<div class="d2l-box-layout d2l_1_13_828">
+						<div class="d2l-box d2l-box-v d2l_1_59_742">
+							<div class="d2l-box-layout d2l_1_13_828">
+								<div class="d2l-box d2l-box-h d2l_1_60_634 d2l_1_45_178">
+									<nav role="navigation">
+										<h2 class="d2l-heading vui-offscreen" id="d2l_1_61_170">Breadcrumb:</h2>
+										<ol class="d2l-breadcrumbs d2l_1_62_314" aria-labelledby="d2l_1_61_170">
+											<li class="d2l-breadcrumb"><a class="vui-link vui-outline d2l-link" href="javascript:void(0);" onclick="D2L.O(&quot;__g1&quot;,8)();return false;">Table of Contents</a>
+											</li><li class="d2l-breadcrumb"><a class="vui-link vui-outline d2l-link" href="https://d2l.pdx.edu/d2l/le/content/531796/Home?itemIdentifier=D2L.LE.Content.ContentObject.ModuleCO-2089371">Homework Assignments</a>
+											</li><li class="d2l-breadcrumb d2l-page-breadcrumb-title d2l-breadcrumb-last"><span class="d2l-breadcrumb-text">CS161 Homework#2</span></li></ol>
+									</nav>
+								</div>
+							</div>
+						</div>
+						<div class="d2l-box d2l-box-v d2l_1_59_742">
+							<div class="d2l-box-layout d2l_1_13_828">
+								<div class="d2l-box d2l-box-h d2l_1_60_634 d2l_1_45_178">
+									<div class="d2l-page-title-c"><div class="d2l-box-layout d2l_1_63_636">
+										<div class="d2l-box d2l-box-h d2l_1_64_744 d2l_1_45_178">
+											<img class="d2l-image d2l_1_65_738 d2l_1_66_909" src="./CS161 Homework#2_files/pixel.gif" alt="">
+										</div>
+										<div class="d2l-box d2l-box-h d2l_1_60_634 d2l_1_45_178">
+											<h1 class="d2l-page-title d2l-heading vui-heading-1">CS161 Homework#2</h1>
+											<div id="d2l_1_67_333" class="d2l-floating-container d2l-hidden d2l-floating-container-autoclose" role="menu" tabindex="-1">
+												<ul id="d2l_pageTitleActions" class="d2l-contextmenu" role="presentation">
+													<li id="d2l_1_68_995" class="d2l-contextmenu-item" role="presentation">
+														<a class="d2l_1_69_908" tabindex="-1" role="menuitem"><span>Download</span></a>
+													</li>
+												</ul>
+											</div>
+											<a id="d2l_1_4_922" class="d2l-contextmenu-ph" data-contextmenuid="d2l_pageTitleActions" title="Actions for &#39;CS161 Homework#2&#39;" onclick="D2L.O(&quot;__g1&quot;,9)();return false;" href="javascript:void(0);" aria-haspopup="true">
+												<img src="./CS161 Homework#2_files/pixel.gif" class="d2l_1_71_619" alt="">
+												<span class="d2l-offscreen">Actions for 'CS161 Homework#2'</span>
+											</a>
+											<div class="d2l-clear"></div>
+											<div class="d2l-page-title-view"><h2 class="d2l-heading vui-offscreen">Adobe Acrobat Document</h2>
+											</div></div>
+									</div>
+									</div></div>
+								<div class="d2l-box d2l-box-h d2l_1_59_742">
+									<div class="d2l-page-header-side">
+										<div class="d2l_1_72_402 d2l-inline">
+											<a class="d2l-imagelink d2l_1_75_11 d2l_1_76_344" id="d2l_1_73_65" href="javascript:void(0);" onclick="return false;" data-hoverclassname="d2l_1_76_344" title="Add Bookmark" role="button"><span class="d2l-offscreen">Add Bookmark</span></a>
+											<a class="d2l-imagelink d2l-hidden d2l_1_77_754 d2l_1_78_402" id="d2l_1_74_48" href="javascript:void(0);" onclick="return false;" data-hoverclassname="d2l_1_78_402" title="Remove Bookmark" role="button"><span class="d2l-offscreen">Remove Bookmark</span></a>
+										</div>
+										<div class="d2l_1_72_402 d2l-inline">
+											<a class="d2l-imagelink d2l_1_80_324 d2l_1_81_30" id="d2l_1_79_34" href="javascript:void(0);" onclick="return false;" data-hoverclassname="d2l_1_81_30" title="View content in new window" role="button"><span class="d2l-offscreen">View content in new window</span></a>
+										</div>
+										<div class="d2l_1_82_636 d2l-inline">
+											<div class="d2l-iterator">
+												<a class="d2l-iterator-button d2l-button-nml d2l-iterator-button-prev d2l-iterator-button-notext" role="button" href="https://d2l.pdx.edu/d2l/le/content/531796/navigateContent/130/Previous?pId=2089371" title="Previous "><img class="d2l-image d2l_1_83_14" src="./CS161 Homework#2_files/pixel.gif" alt=""><span class="d2l-offscreen">Previous </span>&nbsp;</a><a class="d2l-iterator-button d2l-button-nml d2l-iterator-button-next d2l-iterator-button-notext" role="button" href="https://d2l.pdx.edu/d2l/le/content/531796/navigateContent/130/Next?pId=2089371" title="Next"><span class="d2l-offscreen">Next</span>&nbsp;<img class="d2l-image d2l_1_84_37" src="./CS161 Homework#2_files/pixel.gif" alt=""></a></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="d2l-messagearea d2l_1_85_365" id="d2l_messagearea" role="alert" tabindex="0"></div><div id="ContentView" class="d2l-placeholder d2l-placeholder-live" aria-live="assertive">
+					<div id="d2l_le_content_printcontainer">
+						<div class="d2l-fileviewer" style="min-height: 305px;"><div class="d2l-fileviewer-pdf" id="d2l_1_87_512" data-location="/content/enforced/531796-OFFERING_CS-161-001_201503/CS161%20Homework%232.pdf?d2lSessionVal=Bh3ETEOVWh7xott1joqvCzVpk&amp;ou=531796" data-title="CS161 Homework#2.pdf" data-has-native-reader="False" data-is-tablet="False"><div id="d2l_1_86_308" class="d2l-placeholder d2l-placeholder-live" aria-live="assertive">
+							</div>
+							<iframe class="d2l-fileviewer-rendered-pdf" src="./CS161 Homework#2_files/CS161 Homework#2.html" title="CS161 Homework#2.pdf" style="width: 100%; overflow: hidden; min-height: 300px; height: 800px;"></iframe></div></div>
+					</div>
+				</div>
+				<div class="d2l_1_88_731">
+					<div class="d2l-left">
+						<a class="vui-button d2l-button" id="d2l_1_6_241" role="button" tabindex="0"><span class="vui-icon-d2l d2l_1_89_121"></span> Download</a>
+						<a class="vui-button d2l-button d2l-hidden" id="d2l_1_7_759" role="button" tabindex="0"><span class="vui-icon-d2l d2l_1_90_182"></span> Print</a>
+					</div>
+					<div class="d2l-right">
+						<div class="d2l_1_82_636 d2l-inline">
+							<div class="d2l-iterator">
+								<a class="d2l-iterator-button d2l-button-nml d2l-iterator-button-prev d2l-iterator-button-notext" role="button" href="https://d2l.pdx.edu/d2l/le/content/531796/navigateContent/130/Previous?pId=2089371" title="Previous "><img class="d2l-image d2l_1_83_14" src="./CS161 Homework#2_files/pixel.gif" alt=""><span class="d2l-offscreen">Previous </span>&nbsp;</a><a class="d2l-iterator-button d2l-button-nml d2l-iterator-button-next d2l-iterator-button-notext" role="button" href="https://d2l.pdx.edu/d2l/le/content/531796/navigateContent/130/Next?pId=2089371" title="Next"><span class="d2l-offscreen">Next</span>&nbsp;<img class="d2l-image d2l_1_84_37" src="./CS161 Homework#2_files/pixel.gif" alt=""></a></div>
+						</div>
+					</div>
+					<div class="d2l-clear"></div>
+				</div>
+				<div class="d2l-sep d2l-sep-s d2l-sep-t"><hr></div>
+				<div class="d2l_1_91_330">
+					<div class="d2l-collapsepane">
+						<div class="d2l-collapsepane-header d2l_1_94_667 d2l_1_95_28">
+							<span id="d2l_1_93_949" class="d2l-expandcollapse d2l-right">
+								<a class="d2l-imagelink d2l-right d2l-hidden d2l_1_97_674 vui-outline" id="d2l_1_96_733" href="javascript:void(0);" onclick="return false;" title="Expand Activity Details" role="button"><span class="d2l-offscreen">Expand Activity Details</span></a>
+								<a class="d2l-imagelink d2l-right d2l_1_99_567 vui-outline" id="d2l_1_98_262" href="javascript:void(0);" onclick="return false;" title="Collapse Activity Details" role="button"><span class="d2l-offscreen">Collapse Activity Details</span></a>
+							</span>
+							<h2 class="d2l-heading vui-heading-3 d2l-left" id="d2l_1_93_949_h">Activity Details</h2>
+							<div class="d2l-clear"></div>
+						</div>
+						<div class="d2l-collapsepane-content d2l_1_100_267 d2l_1_101_521 d2l_1_102_577" id="d2l_1_92_759">
+							<div class="d2l-box-layout d2l_1_13_828">
+								<div class="d2l-box d2l-box-h d2l_1_60_634 d2l_1_59_742">
+									<div class="d2l_1_103_523">
+										<div class="d2l-inline">
+											<div id="d2l_1_0_366" class="d2l-placeholder d2l-placeholder-live" aria-live="assertive">
+												<form data-method="post" data-scope="" class="d2l-form d2l-form-primary" id="CompletionTaskForm" onsubmit="return false;">
+													<div class="d2l-inline">
+														<div class="d2l-container-icon d2l_1_51_118 d2l_1_104_896 d2l_1_51_118 d2l_1_105_142 d2l_1_106_714">
+															<div class="d2l-textblock d2l-textblock-emphasis">Task: View this topic</div>
+														</div>
+													</div>
+													<div class="d2l-inline">
+													</div>
+												<input type="text" class="d2l-hidden"></form>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="ResultDetails" class="d2l-placeholder d2l-placeholder-inner d2l-placeholder-live" aria-live="assertive">
+				</div>
+				<div class="d2l-sep d2l-sep-s d2l-sep-t d2l-sep-b"><hr></div>
+				<div id="StatusPlaceholder" class="d2l-placeholder d2l-placeholder-live" aria-live="assertive">
+					<div class="d2l-textblock d2l-textblock-secondary d2l-textblock-emphasis"></div>
+				</div>
+			</div>
+		</div>
+<script type="text/javascript" src="./CS161 Homework#2_files/jquery-1.11.0.min.js"></script>
+		<script type="text/javascript" src="./CS161 Homework#2_files/jquery-ui-1.10.3.min.js"></script>
+		<script type="text/javascript" src="./CS161 Homework#2_files/valenceui.min.js"></script>
+		<script type="text/javascript" src="./CS161 Homework#2_files/D2L.LP.Web.Desktop.default.js"></script>
+		<script type="text/javascript" src="./CS161 Homework#2_files/D2L.LE.Content.ContentViewer.default.js"></script>
+		<script type="text/javascript" src="./CS161 Homework#2_files/D2L.LE.Content.Web.Desktop.default.js"></script>
+		<script type="text/javascript" src="./CS161 Homework#2_files/D2L.LE.ToolIntegration.Content.default.js"></script>
+		<script type="text/javascript">
+		//<![CDATA[
+			D2L.LP.Web.UI.Events.OnInit.AddListener( function() {
+D2L.O("__g1",18)();
+D2L.O("__g1",19)();
+D2L.O("__g1",20)();
+D2L.O("__g1",21)();
+D2L.O("__g1",22)();
+D2L.O("__g1",23)();
+D2L.O("__g1",24)();
+D2L.O("__g1",25)();
+D2L.O("__g1",26)();
+D2L.O("__g1",27)();
+D2L.O("__g1",28)();
+D2L.O("__g1",29)();
+} );
+
+			D2L.LP.Web.UI.Events.OnLoad.AddListener( function() {
+D2L.O("__g1",30)();
+D2L.O("__g1",31)();
+D2L.O("__g1",32)();
+} );
+
+			D2L.OR={
+"d2l_1_16_321":{"MenuFlyout.OpenFirstFunction":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.PartialRendering.PartialRender\",\"P\":[{\"_type\":\"id\",\"Value\":\"courseSelectorId\"},{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Rpc.ConnectPartial\",\"P\":[{\"_type\":\"id\",\"Value\":\"courseSelectorId\"},\"GET\",{\"_type\":\"url\",\"Url\":\"\/d2l\/lp\/courseSelector\/531796\/InitPartial\"},{\"_type\":\"D2L.LP.Util.Dictionary\"},{\"_type\":\"D2L.LP.Web.UI.Rpc.RpcOptions\",\"keepAlive\":true,\"includeXsrfHeader\":false,\"appId\":\"\"}],\"D\":true},0],\"D\":true}"}
+,
+"courseSelectorId":{"0":"{\"_type\":\"D2L.LP.Web.UI.Html.PartialRendering.PartialHtmlRenderContext\",\"HeadingLevel\":2,\"ValidClassNames\":[],\"Scope\":\"\"}"}
+,
+"d2l_1_8_437":{"MenuFlyout.OpenFunction":"{\"_type\":\"pipe\",\"P\":[{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.JavaScript.If\",\"P\":[{\"_type\":\"call\",\"N\":\"D2L.LP.Web.UI.Html.JavaScript.CompareBoolean\",\"P\":[1,{\"_type\":\"call\",\"N\":\"D2L.VG\",\"P\":[\"ab_status_Messages\"]},true]},{\"_type\":\"pipe\",\"P\":[{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.PartialRendering.PartialRender\",\"P\":[{\"_type\":\"id\",\"Value\":\"AB_DL_PH_Messages\"},{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Rpc.ConnectPartial\",\"P\":[{\"_type\":\"id\",\"Value\":\"AB_DL_PH_Messages\"},\"GET\",{\"_type\":\"call\",\"N\":\"D2L.LP.Web.Mvc.RouteLocation.Create\",\"P\":[\"\/d2l\/MiniBar\/{orgUnitId}\/ActivityFeed\/{action}\",{\"_type\":\"D2L.LP.Util.Dictionary\",\"Category\":2},{\"_type\":\"D2L.LP.Util.Dictionary\",\"action\":\"GetAlerts\",\"orgUnitId\":531796}]},{\"_type\":\"D2L.LP.Util.Dictionary\"},{\"_type\":\"D2L.LP.Web.UI.Rpc.RpcOptions\",\"keepAlive\":true,\"includeXsrfHeader\":false,\"appId\":\"\"}],\"D\":true},0],\"D\":true}]}],\"D\":true},{\"_type\":\"func\",\"N\":\"D2L.VS\",\"P\":[\"ab_status_Messages\",false]},{\"_type\":\"func\",\"N\":\"D2L.LP.ActivityBar.OpenBucket\",\"P\":[\"alert_bucket_Messages\"]}]}",
+"MenuFlyout.CloseFunction":"{\"_type\":\"func\",\"N\":\"D2L.LP.ActivityBar.CloseBucket\",\"P\":[\"alert_bucket_Messages\"]}"}
+,
+"alert_bucket_Messages":{"aria-message":"\"You have new Messages\"",
+"title":"\"Message alerts\"",
+"new-alert-title":"\"Message alerts - You have new alerts\"",
+"flyout-id":"{\"_type\":\"id\",\"Value\":\"d2l_1_8_437\"}"}
+,
+"AB_DL_PH_Messages":{"0":"{\"_type\":\"D2L.LP.Web.UI.Html.PartialRendering.PartialHtmlRenderContext\",\"HeadingLevel\":2,\"ValidClassNames\":[],\"Scope\":\"\"}"}
+,
+"d2l_1_9_229":{"MenuFlyout.OpenFunction":"{\"_type\":\"pipe\",\"P\":[{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.JavaScript.If\",\"P\":[{\"_type\":\"call\",\"N\":\"D2L.LP.Web.UI.Html.JavaScript.CompareBoolean\",\"P\":[1,{\"_type\":\"call\",\"N\":\"D2L.VG\",\"P\":[\"ab_status_Grades\"]},true]},{\"_type\":\"pipe\",\"P\":[{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.PartialRendering.PartialRender\",\"P\":[{\"_type\":\"id\",\"Value\":\"AB_DL_PH_Grades\"},{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Rpc.ConnectPartial\",\"P\":[{\"_type\":\"id\",\"Value\":\"AB_DL_PH_Grades\"},\"GET\",{\"_type\":\"call\",\"N\":\"D2L.LP.Web.Mvc.RouteLocation.Create\",\"P\":[\"\/d2l\/MiniBar\/{orgUnitId}\/ActivityFeed\/{action}\",{\"_type\":\"D2L.LP.Util.Dictionary\",\"Category\":1},{\"_type\":\"D2L.LP.Util.Dictionary\",\"action\":\"GetAlerts\",\"orgUnitId\":531796}]},{\"_type\":\"D2L.LP.Util.Dictionary\"},{\"_type\":\"D2L.LP.Web.UI.Rpc.RpcOptions\",\"keepAlive\":true,\"includeXsrfHeader\":false,\"appId\":\"\"}],\"D\":true},0],\"D\":true}]}],\"D\":true},{\"_type\":\"func\",\"N\":\"D2L.VS\",\"P\":[\"ab_status_Grades\",false]},{\"_type\":\"func\",\"N\":\"D2L.LP.ActivityBar.OpenBucket\",\"P\":[\"alert_bucket_Grades\"]}]}",
+"MenuFlyout.CloseFunction":"{\"_type\":\"func\",\"N\":\"D2L.LP.ActivityBar.CloseBucket\",\"P\":[\"alert_bucket_Grades\"]}"}
+,
+"alert_bucket_Grades":{"aria-message":"\"You have new Updates\"",
+"title":"\"Update alerts\"",
+"new-alert-title":"\"Update alerts - You have new alerts\"",
+"flyout-id":"{\"_type\":\"id\",\"Value\":\"d2l_1_9_229\"}"}
+,
+"AB_DL_PH_Grades":{"0":"{\"_type\":\"D2L.LP.Web.UI.Html.PartialRendering.PartialHtmlRenderContext\",\"HeadingLevel\":2,\"ValidClassNames\":[],\"Scope\":\"\"}"}
+,
+"d2l_1_10_377":{"MenuFlyout.OpenFunction":"{\"_type\":\"pipe\",\"P\":[{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.JavaScript.If\",\"P\":[{\"_type\":\"call\",\"N\":\"D2L.LP.Web.UI.Html.JavaScript.CompareBoolean\",\"P\":[1,{\"_type\":\"call\",\"N\":\"D2L.VG\",\"P\":[\"ab_status_Alerts\"]},true]},{\"_type\":\"pipe\",\"P\":[{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.PartialRendering.PartialRender\",\"P\":[{\"_type\":\"id\",\"Value\":\"AB_DL_PH_Alerts\"},{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Rpc.ConnectPartial\",\"P\":[{\"_type\":\"id\",\"Value\":\"AB_DL_PH_Alerts\"},\"GET\",{\"_type\":\"call\",\"N\":\"D2L.LP.Web.Mvc.RouteLocation.Create\",\"P\":[\"\/d2l\/MiniBar\/{orgUnitId}\/ActivityFeed\/{action}\",{\"_type\":\"D2L.LP.Util.Dictionary\",\"Category\":0},{\"_type\":\"D2L.LP.Util.Dictionary\",\"action\":\"GetAlerts\",\"orgUnitId\":531796}]},{\"_type\":\"D2L.LP.Util.Dictionary\"},{\"_type\":\"D2L.LP.Web.UI.Rpc.RpcOptions\",\"keepAlive\":true,\"includeXsrfHeader\":false,\"appId\":\"\"}],\"D\":true},0],\"D\":true}]}],\"D\":true},{\"_type\":\"func\",\"N\":\"D2L.VS\",\"P\":[\"ab_status_Alerts\",false]},{\"_type\":\"func\",\"N\":\"D2L.LP.ActivityBar.OpenBucket\",\"P\":[\"alert_bucket_Alerts\"]}]}",
+"MenuFlyout.CloseFunction":"{\"_type\":\"func\",\"N\":\"D2L.LP.ActivityBar.CloseBucket\",\"P\":[\"alert_bucket_Alerts\"]}"}
+,
+"alert_bucket_Alerts":{"aria-message":"\"You have new Subscriptions\"",
+"title":"\"Subscription alerts\"",
+"new-alert-title":"\"Subscription alerts - You have new alerts\"",
+"flyout-id":"{\"_type\":\"id\",\"Value\":\"d2l_1_10_377\"}"}
+,
+"AB_DL_PH_Alerts":{"0":"{\"_type\":\"D2L.LP.Web.UI.Html.PartialRendering.PartialHtmlRenderContext\",\"HeadingLevel\":2,\"ValidClassNames\":[],\"Scope\":\"\"}"}
+,
+"__g1":{"0":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.ReturnPoints.Set\",\"P\":[\"D2L.UXP.Profile.6605.148906\"]}",
+"1":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.ReturnPoints.Set\",\"P\":[\"D2L.LP.Notification.Settings.531796\"]}",
+"2":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.ReturnPoints.Set\",\"P\":[\"D2L.UXP.Preferences.531796\"]}",
+"3":"{\"_type\":\"func\",\"N\":\"D2L.PT.Auth.Logout\",\"P\":[\"\/d2l\/logout\"]}",
+"4":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.Dom.OpenWindow\",\"P\":[\"NavbarLink_5542\",{\"_type\":\"url\",\"Url\":\"\/d2l\/common\/dialogs\/quickLink\/quickLink.d2l?ou=531796&type=lti&rcode=Portland_p-851579&srcou=6605\"},0,0,true,true]}",
+"5":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.Dom.OpenWindow\",\"P\":[\"NavbarLink_5242\",{\"_type\":\"url\",\"Url\":\"http:\/\/pdxtutorials.uservoice.com\"},0,0,true,true]}",
+"6":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.Dom.OpenWindow\",\"P\":[\"NavbarLink_5241\",{\"_type\":\"url\",\"Url\":\"http:\/\/www.pdx.edu\/oit\/online-class-support\"},0,0,true,true]}",
+"7":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.PartialRendering.PartialRender\",\"P\":[{\"_type\":\"id\",\"Value\":\"ContentNavigator\"},{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Rpc.ConnectPartial\",\"P\":[{\"_type\":\"id\",\"Value\":\"ContentNavigator\"},\"GET\",{\"_type\":\"url\",\"Url\":\"\/d2l\/le\/content\/531796\/viewobject\/2098596\/PartialNavigator?mId=2089371\"},{\"_type\":\"D2L.LP.Util.Dictionary\"},{\"_type\":\"D2L.LP.Web.UI.Rpc.RpcOptions\",\"keepAlive\":true,\"includeXsrfHeader\":false,\"appId\":\"\"}],\"D\":true},0],\"D\":true}",
+"8":"{\"_type\":\"pipe\",\"P\":[{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.Dom.Navigate\",\"P\":[{\"_type\":\"url\",\"Url\":\"\/d2l\/le\/content\/531796\/Home?itemIdentifier=TOC\"}]}]}",
+"9":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Desktop.Controls.ContextMenu.Open\",\"P\":[{\"_type\":\"id\",\"Value\":\"d2l_pageTitleActions\"},{\"_type\":\"id\",\"Value\":\"d2l_1_4_922\"},\"d2l_1_70_534\",null]}",
+"10":"{\"_type\":\"pipe\",\"P\":[{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.Dom.SetIsDisplayed\",\"P\":[{\"_type\":\"id\",\"Value\":\"d2l_1_74_48\"},true]},{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.Dom.SetIsDisplayed\",\"P\":[{\"_type\":\"id\",\"Value\":\"d2l_1_73_65\"},false]},{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.Dom.Focus\",\"P\":[{\"_type\":\"id\",\"Value\":\"d2l_1_74_48\"}]},{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Rpc.Connect\",\"P\":[\"POST\",{\"_type\":\"url\",\"Url\":\"\/d2l\/le\/content\/531796\/viewContent\/2098596\/ToggleBookmark?bookmarkStatus=1\"}],\"D\":true}]}",
+"11":"{\"_type\":\"pipe\",\"P\":[{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.Dom.SetIsDisplayed\",\"P\":[{\"_type\":\"id\",\"Value\":\"d2l_1_73_65\"},true]},{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.Dom.SetIsDisplayed\",\"P\":[{\"_type\":\"id\",\"Value\":\"d2l_1_74_48\"},false]},{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.Dom.Focus\",\"P\":[{\"_type\":\"id\",\"Value\":\"d2l_1_73_65\"}]},{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Rpc.Connect\",\"P\":[\"POST\",{\"_type\":\"url\",\"Url\":\"\/d2l\/le\/content\/531796\/viewContent\/2098596\/ToggleBookmark?bookmarkStatus=0\"}],\"D\":true}]}",
+"12":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.Dom.OpenWindow\",\"P\":[\"CS161 Homework#2\",{\"_type\":\"url\",\"Url\":\"\/d2l\/le\/content\/531796\/fullscreen\/2098596\/View\"},1280,800,false,false]}",
+"13":"{\"_type\":\"pipe\",\"P\":[{\"_type\":\"func\",\"N\":\"D2L.VS\",\"P\":[\"CheckTopicFileJSVariable\",{\"_type\":\"call\",\"N\":\"D2L.LP.Web.UI.Rpc.ConnectObject\",\"P\":[\"GET\",{\"_type\":\"url\",\"Url\":\"\/d2l\/le\/content\/531796\/topics\/files\/download\/2098596\/CheckFileTopicInfo\"}],\"D\":true}]},{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.JavaScript.If\",\"P\":[{\"_type\":\"call\",\"N\":\"D2L.LP.Web.UI.Html.JavaScript.ObjectAccessor\",\"P\":[{\"_type\":\"call\",\"N\":\"D2L.VG\",\"P\":[\"CheckTopicFileJSVariable\"]},\"IsBroken\"]},{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Desktop.MasterPages.Dialog.InlineDialog\",\"P\":[{\"_type\":\"id\",\"Value\":\"d2l_1_4_922\"},null,\"Error\",\"Unable to download. The file associated with this content topic cannot be found.\",\"\",\"OK\",\"\",\"Close this Dialog\",\"d2l-dialog-inline-body-alert\",null,null,null,true,false,false],\"D\":true},true,{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.JavaScript.If\",\"P\":[{\"_type\":\"call\",\"N\":\"D2L.LP.Web.UI.Html.JavaScript.ObjectAccessor\",\"P\":[{\"_type\":\"call\",\"N\":\"D2L.VG\",\"P\":[\"CheckTopicFileJSVariable\"]},\"IsPackageable\"]},{\"_type\":\"pipe\",\"P\":[{\"_type\":\"func\",\"N\":\"D2L.VS\",\"P\":[\"DownloadProgressDialogResultJSVariable\",{\"_type\":\"call\",\"N\":\"D2L.LP.Web.UI.Desktop.MasterPages.Dialog.Open\",\"P\":[{\"_type\":\"id\",\"Value\":\"d2l_1_4_922\"},{\"_type\":\"url\",\"Url\":\"\/d2l\/le\/content\/531796\/2098596\/startdownload\/InitiateTopicDownload?openerId=d2l_1_4_922\"}],\"D\":true}]},{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.JavaScript.If\",\"P\":[{\"_type\":\"call\",\"N\":\"D2L.LP.Web.UI.Html.JavaScript.CompareNumber\",\"P\":[5,{\"_type\":\"call\",\"N\":\"D2L.VG\",\"P\":[\"DownloadProgressDialogResultJSVariable\"]},0]},{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.Dom.Navigate\",\"P\":[{\"_type\":\"call\",\"N\":\"D2L.LP.Web.Mvc.RouteLocation.Create\",\"P\":[\"\/d2l\/le\/content\/{orgUnitId}\/downloads\/{downloadType}\/{jobId}\/{action}\",{\"_type\":\"D2L.LP.Util.Dictionary\"},{\"_type\":\"D2L.LP.Util.Dictionary\",\"action\":\"Download\",\"orgUnitId\":531796,\"downloadType\":\"Topic\",\"jobId\":{\"_type\":\"call\",\"N\":\"D2L.VG\",\"P\":[\"DownloadProgressDialogResultJSVariable\"]}}]}]},true,null],\"D\":true}]},true,{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.Dom.Navigate\",\"P\":[{\"_type\":\"url\",\"Url\":\"\/d2l\/le\/content\/531796\/topics\/files\/download\/2098596\/DirectFileTopicDownload\"}]}],\"D\":true}],\"D\":true}]}",
+"14":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Desktop.Controls.FileViewer.TryPrint\",\"P\":[{\"_type\":\"id\",\"Value\":\"d2l_le_content_printcontainer\"}]}",
+"15":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Common.Controls.ExpandCollapse.Toggle\",\"P\":[{\"_type\":\"id\",\"Value\":\"d2l_1_93_949\"}]}",
+"16":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.Dom.SetIsDisplayed\",\"P\":[{\"_type\":\"id\",\"Value\":\"d2l_1_92_759\"},true]}",
+"17":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.Dom.SetIsDisplayed\",\"P\":[{\"_type\":\"id\",\"Value\":\"d2l_1_92_759\"},false]}",
+"18":"{\"_type\":\"func\",\"N\":\"D2L.VS\",\"P\":[\"ab_status_Messages\",true]}",
+"19":"{\"_type\":\"func\",\"N\":\"D2L.VS\",\"P\":[\"ab_status_Grades\",true]}",
+"20":"{\"_type\":\"func\",\"N\":\"D2L.VS\",\"P\":[\"ab_status_Alerts\",true]}",
+"21":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Desktop.Controls.FloatingContainer.Init\"}",
+"22":"{\"_type\":\"func\",\"N\":\"D2L.PT.Auth.SessionTimeout.Init\",\"P\":[\"148906\",180,5,{\"_type\":\"id\",\"Value\":\"d2l_sessionExpiryWarning\"},\"d2l_sessionExpiryAlert\",\"d2l_sessionExpiryCheck\",{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Rpc.ConnectObject\",\"P\":[\"POST\",{\"_type\":\"url\",\"Url\":\"\/d2l\/lp\/auth\/session\/extend\"}],\"D\":true},{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Desktop.MasterPages.Dialog.OpenHelper\",\"P\":[{\"_type\":\"call\",\"N\":\"D2L.LP.Web.UI.Html.Dom.GetActiveElement\"},{\"_type\":\"url\",\"Url\":\"\/d2l\/lp\/auth\/session\/Expired?isUsernamePasswordLogin=0&isLogout=0\"}],\"D\":true},{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Desktop.MasterPages.Dialog.OpenHelper\",\"P\":[{\"_type\":\"call\",\"N\":\"D2L.LP.Web.UI.Html.Dom.GetActiveElement\"},{\"_type\":\"url\",\"Url\":\"\/d2l\/lp\/auth\/session\/Expired?isUsernamePasswordLogin=0&isLogout=1\"}],\"D\":true},{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Desktop.MasterPages.Dialog.InlineDialog\",\"P\":[null,{\"_type\":\"id\",\"Value\":\"d2l_1_107_264\"},\"Warning\",\"New User Session\",\"The current user session has changed, so the links and content on this page may not behave as expected.\",\"OK\",\"\",\"Close this Dialog\",\"d2l-dialog-inline-body-warning\",null,null,null,true,false,false],\"D\":true},{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Desktop.MasterPages.Dialog.Inline.Abort\",\"P\":[{\"_type\":\"id\",\"Value\":\"d2l_1_107_264\"}]}]}",
+"23":"{\"_type\":\"func\",\"N\":\"D2LMathML.DesktopInit\",\"P\":[\"\/d2l\/common\/mathjax\/2.1\/MathJax.js?config=MML_HTMLorMML&v=10.3.0.2146-105\",\"\/d2l\/common\/mathjax\/2.1\/MathJax.js?config=TeX-AMS-MML_HTMLorMML&v=10.3.0.2146-105\"]}",
+"24":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.Authentication.Xsrf.Init\",\"P\":[\"d2l_referrer\",\"ir9j5Kue5EWYuEFVLQu0wvpbkA4UXtu2\",-1137032419]}",
+"25":"{\"_type\":\"func\",\"N\":\"D2L.LP.ActivityBar.Init\",\"P\":[{\"_type\":\"url\",\"Url\":\"\/d2l\/activityFeed\/checkForNewAlerts\"},120,\"alert_bucket_{0}\",\"ab_status_{0}\"]}",
+"26":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Common.Controls.MessageArea.Init\",\"P\":[\"d2l_messagearea\",{\"_type\":\"url\",\"Url\":\"\/d2l\/lp\/validation\/errors\"}]}",
+"27":"{\"_type\":\"func\",\"N\":\"D2L.LP.Globalization.Locale.Init\",\"P\":[0,{\"_type\":\"anon\",\"DecimalSeparator\":\".\",\"GroupSeparator\":\",\",\"NumberNegativePattern\":1,\"PercentPositivePattern\":0,\"PercentNegativePattern\":0,\"PercentSymbol\":\"%\",\"NegativeSign\":\"-\",\"NativeDigits\":[\"0\",\"1\",\"2\",\"3\",\"4\",\"5\",\"6\",\"7\",\"8\",\"9\"],\"UseNativeDigits\":false,\"GroupSizes\":[0],\"IntegerRegex\":\"^([\\\\(-]*(([01234567890123456789]+))[\\\\)-]*)$|^([\\\\(-]*[01234567890123456789]+[\\\\)-]*)$\",\"DecimalRegex\":\"^([\\\\(-]*(([01234567890123456789]+))(\\\\.[01234567890123456789]+)?[\\\\)-]*)$|^([\\\\(-]*[01234567890123456789]*\\\\.?[01234567890123456789]+[\\\\)-]*)$\"},{\"_type\":\"anon\",\"InputDateFormat\":\"M\/d\/yyyy\",\"Is24HourClock\":false,\"NativeDigits\":[\"0\",\"1\",\"2\",\"3\",\"4\",\"5\",\"6\",\"7\",\"8\",\"9\"],\"UseNativeDigits\":false,\"TimeFormat\":\"h:mm tt\",\"AmDesignator\":\"AM\",\"PmDesignator\":\"PM\",\"ShortMonthNames\":[\"Jan\",\"Feb\",\"Mar\",\"Apr\",\"May\",\"Jun\",\"Jul\",\"Aug\",\"Sep\",\"Oct\",\"Nov\",\"Dec\",\"\"],\"ShortDayOfWeekNames\":[\"Sun\",\"Mon\",\"Tue\",\"Wed\",\"Thu\",\"Fri\",\"Sat\"]},{\"_type\":\"anon\",\"TextDirection\":1},{\"_type\":\"anon\",\"Culture\":\"en-us\"},{\"_type\":\"anon\",\"JustNow\":\"just now\",\"OneMinuteAgo\":\"1 minute ago\",\"TwoMinutesAgo\":\"2 minutes ago\",\"MinutesAgoMany\":\"[0] minutes ago\",\"OneHourAgo\":\"1 hour ago\",\"TwoHoursAgo\":\"2 hours ago\",\"ManyHoursAgo\":\"[0] hours ago\",\"YesterdayTime\":\"yesterday at [0]\",\"DayOfWeekTime\":\"[0] at [1]\",\"MonthDayTime\":\"[0] at [1]\",\"Now\":{\"_type\":\"D2L.LocalDateTime\",\"Year\":2015,\"Month\":7,\"Day\":2,\"Hour\":12,\"Minute\":19,\"Second\":46}}]}",
+"28":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Rpc.Initialize\",\"P\":[{\"_type\":\"url\",\"Url\":\"\/d2l\/login?target=%2fd2l%2fle%2fcontent%2f531796%2fviewContent%2f2098596%2fView%3fou%3d531796&sessionExpired=1\"},\"Error: unable to complete your request.\",{\"_type\":\"D2L.LP.Util.Dictionary\"},{\"_type\":\"D2L.LP.Util.Dictionary\",\"flash\":{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.FlashMessages.RpcReceivePayloadProvider\"},\"session\":{\"_type\":\"func\",\"N\":\"D2L.PT.Auth.SessionTimeout.RpcReceivePayloadProvider\"},\"messageArea\":{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Common.Controls.MessageArea.RpcReceivePayloadProvider\"},\"OR\":{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.ObjectRepository.RpcReceivePayloadProvider\"},\"JS\":{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.JavaScript.RpcReceiveJsPayloadProvider\"},\"CSS\":{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.JavaScript.RpcReceiveCssPayloadProvider\"},\"ariaMessages\":{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.Aria.RpcReceivePayloadProvider\"}}]}",
+"29":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Desktop.Controls.InlineHelp.Init\",\"P\":[{\"_type\":\"url\",\"Url\":\"\/d2l\/lp\/inlineHelp\/531796\/help\"}]}",
+"30":"{\"_type\":\"func\",\"N\":\"D2L.LE.ViewContent.ContentViewer.OnLoad\",\"P\":[531796,2098596,null]}",
+"31":"{\"_type\":\"pipe\",\"P\":[{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.Dom.SetIsDisplayed\",\"P\":[{\"_type\":\"id\",\"Value\":\"d2l_1_7_759\"},{\"_type\":\"call\",\"N\":\"D2L.LP.Web.UI.Desktop.Controls.FileViewer.IsPrintable\",\"P\":[{\"_type\":\"id\",\"Value\":\"d2l_le_content_printcontainer\"}]}]}]}",
+"32":"{\"_type\":\"func\",\"N\":\"D2L.LE.ToolIntegration.Content.CompletionStatusChanged.Actions.RegisterHandler\",\"P\":[{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.PartialRendering.PartialRender\",\"P\":[{\"_type\":\"id\",\"Value\":\"d2l_1_0_366\"},{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Rpc.ConnectPartial\",\"P\":[{\"_type\":\"id\",\"Value\":\"d2l_1_0_366\"},\"GET\",{\"_type\":\"url\",\"Url\":\"\/d2l\/le\/content\/531796\/object\/2098596\/UpdateCompletion\"},{\"_type\":\"D2L.LP.Util.Dictionary\"},{\"_type\":\"D2L.LP.Web.UI.Rpc.RpcOptions\",\"keepAlive\":true,\"includeXsrfHeader\":false,\"appId\":\"\"}],\"D\":true},0],\"D\":true}]}"}
+,
+"ContentNavigator":{"0":"{\"_type\":\"D2L.LP.Web.UI.Html.PartialRendering.PartialHtmlRenderContext\",\"HeadingLevel\":2,\"ValidClassNames\":[],\"Scope\":\"\"}"}
+,
+"d2l_1_68_995":{"0":"{\"_type\":\"D2L.LP.Util.Dictionary\",\"enabledIconCss\":\"d2l_1_69_908\",\"disabledIconCss\":\"\",\"onClick\":{\"_type\":\"pipe\",\"P\":[{\"_type\":\"func\",\"N\":\"D2L.VS\",\"P\":[\"CheckTopicFileJSVariable\",{\"_type\":\"call\",\"N\":\"D2L.LP.Web.UI.Rpc.ConnectObject\",\"P\":[\"GET\",{\"_type\":\"url\",\"Url\":\"\/d2l\/le\/content\/531796\/topics\/files\/download\/2098596\/CheckFileTopicInfo\"}],\"D\":true}]},{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.JavaScript.If\",\"P\":[{\"_type\":\"call\",\"N\":\"D2L.LP.Web.UI.Html.JavaScript.ObjectAccessor\",\"P\":[{\"_type\":\"call\",\"N\":\"D2L.VG\",\"P\":[\"CheckTopicFileJSVariable\"]},\"IsBroken\"]},{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Desktop.MasterPages.Dialog.InlineDialog\",\"P\":[{\"_type\":\"id\",\"Value\":\"d2l_1_4_922\"},null,\"Error\",\"Unable to download. The file associated with this content topic cannot be found.\",\"\",\"OK\",\"\",\"Close this Dialog\",\"d2l-dialog-inline-body-alert\",null,null,null,true,false,false],\"D\":true},true,{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.JavaScript.If\",\"P\":[{\"_type\":\"call\",\"N\":\"D2L.LP.Web.UI.Html.JavaScript.ObjectAccessor\",\"P\":[{\"_type\":\"call\",\"N\":\"D2L.VG\",\"P\":[\"CheckTopicFileJSVariable\"]},\"IsPackageable\"]},{\"_type\":\"pipe\",\"P\":[{\"_type\":\"func\",\"N\":\"D2L.VS\",\"P\":[\"DownloadProgressDialogResultJSVariable\",{\"_type\":\"call\",\"N\":\"D2L.LP.Web.UI.Desktop.MasterPages.Dialog.Open\",\"P\":[{\"_type\":\"id\",\"Value\":\"d2l_1_4_922\"},{\"_type\":\"url\",\"Url\":\"\/d2l\/le\/content\/531796\/2098596\/startdownload\/InitiateTopicDownload?openerId=d2l_1_4_922\"}],\"D\":true}]},{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.JavaScript.If\",\"P\":[{\"_type\":\"call\",\"N\":\"D2L.LP.Web.UI.Html.JavaScript.CompareNumber\",\"P\":[5,{\"_type\":\"call\",\"N\":\"D2L.VG\",\"P\":[\"DownloadProgressDialogResultJSVariable\"]},0]},{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.Dom.Navigate\",\"P\":[{\"_type\":\"call\",\"N\":\"D2L.LP.Web.Mvc.RouteLocation.Create\",\"P\":[\"\/d2l\/le\/content\/{orgUnitId}\/downloads\/{downloadType}\/{jobId}\/{action}\",{\"_type\":\"D2L.LP.Util.Dictionary\"},{\"_type\":\"D2L.LP.Util.Dictionary\",\"action\":\"Download\",\"orgUnitId\":531796,\"downloadType\":\"Topic\",\"jobId\":{\"_type\":\"call\",\"N\":\"D2L.VG\",\"P\":[\"DownloadProgressDialogResultJSVariable\"]}}]}]},true,null],\"D\":true}]},true,{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.Dom.Navigate\",\"P\":[{\"_type\":\"url\",\"Url\":\"\/d2l\/le\/content\/531796\/topics\/files\/download\/2098596\/DirectFileTopicDownload\"}]}],\"D\":true}],\"D\":true}]}}"}
+,
+"d2l_1_67_333":{"onClose":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Desktop.Controls.ContextMenu.OnCloseHandler\",\"P\":[{\"_type\":\"id\",\"Value\":\"d2l_pageTitleActions\"}]}"}
+,
+"d2l_pageTitleActions":{"Context":"{\"_type\":\"D2L.LP.Util.Dictionary\",\"floatingContainerId\":{\"_type\":\"id\",\"Value\":\"d2l_1_67_333\"}}"}
+,
+"ContentView":{"0":"{\"_type\":\"D2L.LP.Web.UI.Html.PartialRendering.PartialHtmlRenderContext\",\"HeadingLevel\":2,\"ValidClassNames\":[],\"Scope\":\"\"}"}
+,
+"d2l_1_87_512":{"0":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.PartialRendering.PartialRender\",\"P\":[{\"_type\":\"id\",\"Value\":\"d2l_1_86_308\"},{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Rpc.ConnectPartial\",\"P\":[{\"_type\":\"id\",\"Value\":\"d2l_1_86_308\"},\"POST\",{\"_type\":\"url\",\"Url\":\"\/d2l\/DocumentRendererController\/Create\/e4be208b-d850-46d9-968d-a58aeea9d21f\"},{\"_type\":\"D2L.LP.Util.Dictionary\"},{\"_type\":\"D2L.LP.Web.UI.Rpc.RpcOptions\",\"keepAlive\":true,\"includeXsrfHeader\":false,\"appId\":\"\"}],\"D\":true},0],\"D\":true}"}
+,
+"d2l_1_86_308":{"0":"{\"_type\":\"D2L.LP.Web.UI.Html.PartialRendering.PartialHtmlRenderContext\",\"HeadingLevel\":2,\"ValidClassNames\":[],\"Scope\":\"\"}"}
+,
+"d2l_1_0_366":{"0":"{\"_type\":\"D2L.LP.Web.UI.Html.PartialRendering.PartialHtmlRenderContext\",\"HeadingLevel\":3,\"ValidClassNames\":[],\"Scope\":\"\"}"}
+,
+"ResultDetails":{"0":"{\"_type\":\"D2L.LP.Web.UI.Html.PartialRendering.PartialHtmlRenderContext\",\"HeadingLevel\":2,\"ValidClassNames\":[],\"Scope\":\"\"}"}
+,
+"StatusPlaceholder":{"0":"{\"_type\":\"D2L.LP.Web.UI.Html.PartialRendering.PartialHtmlRenderContext\",\"HeadingLevel\":2,\"ValidClassNames\":[],\"Scope\":\"\"}"}
+
+};
+
+		//]]>
+		</script>
+	
+<div class="d2l-aria-log d2l-offscreen" role="alert" aria-live="assertive">You have new Messages</div></body></html>
